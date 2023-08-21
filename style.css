@@ -1,0 +1,145 @@
+/* Carregando a fonte roboto para usar no projeto */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800');
+
+/* Realizando reset do nosso CSS */
+
+html, body {
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.containerContent {
+  display: flex;
+  max-width: 1062px;
+  width: 100%;
+  max-height: 674px;
+  height: 100%;
+  box-shadow: 3px 15px 40px 0px #00000073;
+  justify-content: space-between;
+  position: relative;
+
+  
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 36px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 531px;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+.content p {
+  color: #000;
+  opacity: 50%;
+}
+
+.content button {
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+  margin-top: 40px;
+  transition: all .5s ease;
+}
+
+.containerContent img {
+  max-width: 100%;
+
+}
+
+.img {
+  background-image: url('assets/bg.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  max-width: 531px;
+  width: 100%;
+}
+
+button:hover {
+  border: 1px solid black;
+  background-color: #fff;
+  color: #000;
+}
+
+.containerConteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 531px;
+  width: 100%;
+
+}
+
+img {
+  transition: ease .5s ;
+}
+
+img:hover {
+  transform: scale(1.2) rotate(5deg);
+  
+}
+
+@media screen and (max-width: 767px) {
+
+  .containerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-inline: 52px;
+    margin-block: 100px;
+  }
+
+  .content {
+    margin-top: 170px;
+    align-items: start;
+    
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+}
